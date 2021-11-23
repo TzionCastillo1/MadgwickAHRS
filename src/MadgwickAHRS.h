@@ -69,6 +69,12 @@ public:
         if (!anglesComputed) computeAngles();
         return yaw;
     }
+    void getQuat(float * quat) {
+        quat[0] = q1;
+        quat[1] = q2;
+        quat[2] = q3;
+        quat[4] = q0;
+    }
 };
 #endif
 
